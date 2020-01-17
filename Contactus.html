@@ -1,0 +1,84 @@
+<html>
+    <head>
+            <title>Contact Form Design</title>
+            <style>
+                body{
+                    background-color:beige;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    background-size: cover;
+                    background-position: center;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                .contact-title{
+                    margin-top: 100px;
+                    color: #000;
+                    text-transform: uppercase;
+                    transition: all 4s ease-in-out;
+
+                }
+                .contact-title h1{
+                    font-size:32px ;
+                    line-height: 10px;
+                }
+                .contact-title h2{
+                    font-size: 16px;
+                }
+                form{
+                    margin-top: 50px;
+                    transition:  all 4s ease-in-out;
+
+
+                }
+                .form-controller{
+                   width: 600px; 
+                   background: transparent;
+                   border: none;
+                   outline:none;
+                   border-bottom: 1px solid gray;
+color: #000;
+font-size: 18px;
+margin-bottom: 16px;
+                }
+                input{
+                    height: 45px;
+                }
+                form .submit{
+                    background: brown;
+                    border-color: transparent;
+                    color:black ;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    height: 50px;
+                    margin-top: 20px;
+                }
+                form .submit:hover{
+                    background-color: brown;
+                    cursor: pointer;
+
+                }
+                
+            </style>
+
+    </head>
+    <body>
+        
+        <div class="contact-title">
+            <h1>Say Hello</h1>
+            <h2>We are always ready to serve you</h2>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form"method="post"action="contact.php">
+               <input name="name" type="text" class="form-controller"placeholder="Your name="required>
+               <br>
+               <input name="email" type="email" class="form-controller"placeholder="Your email="required>
+               <br>
+               <textarea name="message" class="form-controller" placeholder="message" rows="4" required></textarea>
+               <br>
+               <input type="submit" class="form-controller submit" value="SEND MESSAGE">
+
+            </form>
+        </div>
+    </body>
+</html>
